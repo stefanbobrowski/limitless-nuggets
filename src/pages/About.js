@@ -5,43 +5,26 @@ export const About = () => {
         <h2>About</h2>
       </div>
       <div className='container'>
+        <h3>💎 Mineral Miner</h3>
+        <p>A Starcraft II tribute game. Built with React.</p>
+        <ul>
+          <li>Mine Minerals from patches that never run out.</li>
+          <li>Use Minerals to hire more Workers. No Worker limit.</li>
+          <li>
+            See how many Workers you can hire, and Minerals you can mine, before
+            your browser explodes!
+          </li>
+        </ul>
         <p>
-          A React template so I don't have to keep stripping down Create React
-          Apps and hooking it up with a router, context, scss, etc.
+          Special thanks to Blizzard for making Starcraft II, and Microsoft for
+          the future Starcraft III.
         </p>
         <p>
-          Built with{' '}
-          <a
-            href='https://create-react-app.dev/'
-            target='_blank'
-            rel='noreferrer'
-          >
-            Create React App
-          </a>
-          ,{' '}
-          <a href='https://reactrouter.com/' target='_blank' rel='noreferrer'>
-            React Router
-          </a>
-          , and{' '}
-          <a
-            href='https://reactjs.org/docs/context.html'
-            target='_blank'
-            rel='noreferrer'
-          >
-            Context
-          </a>
-          .
-        </p>
-        <p>
-          Github:{' '}
-          <a
-            href='https://github.com/stefanbobrowski/Template'
-            target='_blank'
-            rel='noreferrer'
-          >
-            https://github.com/stefanbobrowski/Template
+          <a href='https://stefanbobrowski.com/mineral-miner'>
+            https://stefanbobrowski.com/mineral-miner
           </a>
         </p>
+        <p>stefanbobrowski1@gmail.com</p>
       </div>
     </div>
   );
