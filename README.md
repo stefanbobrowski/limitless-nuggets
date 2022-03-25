@@ -1,11 +1,5 @@
-# 💎 Mineral Miner
+# 🕯️ Template
 
-A Starcraft II tribute game. Built with React.
+A React template so I don't have to keep stripping down Create React Apps and hooking it up with a router, context, scss, etc.
 
-- Mine Minerals from patches that never run out.
-- Use Minerals to hire more Workers. No Worker limit.
-- See how many Workers you can hire, and Minerals you can mine, before your browser explodes!
-
-Special thanks to Blizzard for making Starcraft II, and Microsoft for the future Starcraft III.
-https://stefanbobrowski.com/mineral-miner
-stefanbobrowski1@gmail.com
+Built with [Create React App](https://create-react-app.dev/), [React Router](https://reactrouter.com/), and [Context](https://reactjs.org/docs/context.html).

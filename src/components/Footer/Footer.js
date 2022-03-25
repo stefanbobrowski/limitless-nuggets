@@ -5,7 +5,7 @@ export const Footer = () => {
   return (
     <footer className='app-footer'>
       <span>Copyright &copy; 2022 </span>
-      <Link to='https://stefanbobrowski.com/mineral-miner'>Mineral Miner</Link>
+      <Link to='/'>Template</Link>
       <span>. All Rights Reserved</span>
     </footer>
   );
