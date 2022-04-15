@@ -1,0 +1,48 @@
+{
+    "nuggets": [
+        {
+            "strain": "Northern Lights",
+            "prices": {
+                "sixteenth": 20,
+                "eigth": 60,
+                "quarter": 100,
+                "half": 180,
+                "full": 300
+            },
+            "imgSrc": "/nuggetPhotos/nug-01.png"
+        },
+        {
+            "strain": "OG Kush",
+            "prices": {
+                "sixteenth": 20,
+                "eigth": 60,
+                "quarter": 100,
+                "half": 180,
+                "full": 300
+            },
+            "imgSrc": "/nuggetPhotos/nug-02.png"
+        },
+        {
+            "strain": "Shake",
+            "prices": {
+                "sixteenth": 10,
+                "eigth": 25,
+                "quarter": 40,
+                "half": 75,
+                "full": 125
+            },
+            "imgSrc": "/nuggetPhotos/nug-03.png"
+        },
+        {
+            "strain": "Stanky Danky",
+            "prices": {
+                "sixteenth": 10,
+                "eigth": 25,
+                "quarter": 40,
+                "half": 75,
+                "full": 125
+            },
+            "imgSrc": "/nuggetPhotos/nug-04.png"
+        }
+    ]
+}

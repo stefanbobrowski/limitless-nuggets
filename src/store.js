@@ -2,6 +2,9 @@ import React, { createContext, useReducer } from 'react';
 
 const initialState = {
   text: 'Default text...',
+  cart: [],
+  subtotal: 0,
+  openCheckout: false,
 };
 
 export const Context = createContext(initialState);
@@ -11,6 +14,37 @@ export const Store = ({ children }) => {
     switch (action.type) {
       case 'UPDATE_TEXT':
         return { ...state, text: action.payload };
+      case 'ADD_TO_CART':
+        return {
+          ...state,
+          cart: [...state.cart, action.payload],
+          subtotal: state.subtotal + action.payload.price,
+        };
+      case 'REMOVE_FROM_CART':
+        return {
+          ...state,
+          cart: state.cart.filter(
+            (item) => item !== state.cart[action.payload]
+          ),
+          subtotal: state.subtotal - state.cart[action.payload].price,
+        };
+      case 'CLEAR_CART':
+        return {
+          ...state,
+          cart: [],
+          subtotal: 0,
+        };
+      case 'OPEN_CHECKOUT':
+        return {
+          ...state,
+          openCheckout: true,
+        };
+
+      case 'CLOSE_CHECKOUT':
+        return {
+          ...state,
+          openCheckout: false,
+        };
       default:
         return { ...state };
     }

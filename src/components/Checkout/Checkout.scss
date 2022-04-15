@@ -1,0 +1,50 @@
+.order-total {
+    color: red;
+}
+
+
+
+.checkout {
+    margin: 1rem;
+    padding: 2rem;
+    background-color: #fff;
+
+    .nugget {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0.5rem 0;
+        border: 1px solid red;
+
+        .nugget-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 50px;
+            height: 50px;
+            margin-right: 1rem;
+            background-color: black;
+        
+            img {
+                width: 100%;
+            }
+        }
+
+    }
+
+
+
+}
+
+.checkout-button {
+    padding: 0.25rem 1rem;
+    border-radius: 8px;
+    background-color: gold;
+}
+
+.submit-order-button {
+    padding: 0.25rem 1rem;
+    border-radius: 8px;
+    background-color: gold; 
+}

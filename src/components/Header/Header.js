@@ -6,8 +6,8 @@ export const Header = () => {
     <header className='app-header'>
       <div className='header-nav container'>
         <Link to='/' className='header-logo'>
-          <span>🕯️</span>
-          <span>Template</span>
+          <span>🌿 </span>
+          <span>Limitless Nuggets</span>
         </Link>
         <Link to='/about'>About</Link>
       </div>
