@@ -7,6 +7,7 @@
 .checkout {
     margin: 1rem;
     padding: 2rem;
+    border: 2px solid #222;
     background-color: #fff;
 
     .nugget {
@@ -15,7 +16,7 @@
         align-items: center;
         justify-content: flex-start;
         margin: 0.5rem 0;
-        border: 1px solid red;
+        border: 2px solid #222;
 
         .nugget-image {
             display: flex;
@@ -30,21 +31,26 @@
                 width: 100%;
             }
         }
-
     }
 
-
-
+    input {
+        border: 2px solid #222;
+        padding: 5px 7px;
+    }
 }
 
-.checkout-button {
-    padding: 0.25rem 1rem;
-    border-radius: 8px;
-    background-color: gold;
+.order-total {
+    font-size: 2rem;
+    margin-top: 2rem;
 }
 
-.submit-order-button {
-    padding: 0.25rem 1rem;
+.checkout-button, .submit-order-button {
+    padding: 1rem 1.5rem;
     border-radius: 8px;
-    background-color: gold; 
+    font-weight: bold;
+    background-color: goldenrod;
+
+    &:hover {
+        background-color: gold;
+    }
 }

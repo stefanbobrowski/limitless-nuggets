@@ -26,7 +26,7 @@ export const Checkout = () => {
       phone: customerPhone,
       time: customerTime,
       cart: cart,
-      price: subtotal,
+      price: subtotal + 5,
     };
 
     console.log('SUBMITTED ORDER: ', payload);
@@ -104,9 +104,11 @@ export const Checkout = () => {
               </div>
             ))}
 
-            <p className='order-total'>Order total: ${subtotal}</p>
+            <p className='order-total'>Subtotal: ${subtotal}</p>
+            <p className='order-total'>+ $5 service fee</p>
+            <p className='order-total'>Total: ${subtotal + 5}</p>
             <button className='submit-order-button' type='submit'>
-              Place your order
+              PLACE ORDER
             </button>
           </form>
         </div>

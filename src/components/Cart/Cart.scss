@@ -1,6 +1,7 @@
 .cart {
     margin: 2rem;
     padding: 2rem;
+    border: 2px solid #222;
     background-color: #fff;
 
     .nugget-container {
@@ -13,7 +14,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        margin: 0.5rem 0;
+        padding: 0.5rem 0;
         border-bottom: 1px solid gray;
 
         .nugget-image {
@@ -32,5 +33,19 @@
         top: 0;
         right: 0;
         bottom: 0;
+        margin: auto 1rem auto auto;
+        width: 40px;
+        height: 40px;
+        color: rgb(202, 19, 19);
+        border: 2px solid #222;
+
+        &:hover {
+            background-color: #e39c9c;
+        }
+    }
+
+    .subtotal {
+        font-size: 2rem;
+        margin-top: 2rem;
     }
 }

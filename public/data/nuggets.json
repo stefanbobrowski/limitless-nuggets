@@ -1,48 +1,92 @@
 {
     "nuggets": [
         {
-            "strain": "Northern Lights",
+            "strain": "Black Orchid",
             "prices": {
-                "sixteenth": 20,
+                "sixteenth": 30,
                 "eigth": 60,
-                "quarter": 100,
+                "quarter": 90,
                 "half": 180,
                 "full": 300
             },
-            "imgSrc": "/nuggetPhotos/nug-01.png"
+            "imgSrc": "/nuggetPhotos/BlackOrchid-1.jpg"
         },
         {
-            "strain": "OG Kush",
+            "strain": "Dankaroos",
             "prices": {
-                "sixteenth": 20,
+                "sixteenth": 30,
                 "eigth": 60,
-                "quarter": 100,
+                "quarter": 90,
                 "half": 180,
                 "full": 300
             },
-            "imgSrc": "/nuggetPhotos/nug-02.png"
+            "imgSrc": "/nuggetPhotos/Dankaroos-1.jpg"
         },
         {
-            "strain": "Shake",
+            "strain": "Gelatti",
             "prices": {
-                "sixteenth": 10,
-                "eigth": 25,
-                "quarter": 40,
-                "half": 75,
-                "full": 125
+                "sixteenth": 30,
+                "eighth": 60,
+                "quarter": 90,
+                "half": 180,
+                "full": 300
             },
-            "imgSrc": "/nuggetPhotos/nug-03.png"
+            "imgSrc": "/nuggetPhotos/Gelatti-1.jpg"
         },
         {
-            "strain": "Stanky Danky",
+            "strain": "Georgia",
             "prices": {
-                "sixteenth": 10,
-                "eigth": 25,
-                "quarter": 40,
-                "half": 75,
-                "full": 125
+                "sixteenth": 30,
+                "eighth": 60,
+                "quarter": 90,
+                "half": 180,
+                "full": 300
             },
-            "imgSrc": "/nuggetPhotos/nug-04.png"
+            "imgSrc": "/nuggetPhotos/Georgia-1.jpg"
+        },
+        {
+            "strain": "Grapes",
+            "prices": {
+                "sixteenth": 30,
+                "eighth": 60,
+                "quarter": 90,
+                "half": 180,
+                "full": 300
+            },
+            "imgSrc": "/nuggetPhotos/Grapes-1.jpg"
+        },
+        {
+            "strain": "Jamaican",
+            "prices": {
+                "sixteenth": 30,
+                "eighth": 60,
+                "quarter": 90,
+                "half": 180,
+                "full": 300
+            },
+            "imgSrc": "/nuggetPhotos/Jamaican-1.jpg"
+        },
+        {
+            "strain": "Jefe",
+            "prices": {
+                "sixteenth": 30,
+                "eighth": 60,
+                "quarter": 90,
+                "half": 180,
+                "full": 300
+            },
+            "imgSrc": "/nuggetPhotos/Jefe-1.jpg"
+        },
+        {
+            "strain": "Lemon",
+            "prices": {
+                "sixteenth": 30,
+                "eighth": 60,
+                "quarter": 90,
+                "half": 180,
+                "full": 300
+            },
+            "imgSrc": "/nuggetPhotos/Lemon-1.jpg"
         }
     ]
 }

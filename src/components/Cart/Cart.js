@@ -48,7 +48,7 @@ export const Cart = () => {
                 className='remove-button'
                 onClick={() => handleRemoveFromCart(i)}
               >
-                DELETE
+                ❌
               </button>
               <span>
                 {item.strain} ({item.amount}) -{' '}
@@ -58,7 +58,7 @@ export const Cart = () => {
           ))}
       </div>
 
-      <p>
+      <p className='subtotal'>
         Subtotal ({cart.length} items): <b className='price-red'>${subtotal}</b>
       </p>
 

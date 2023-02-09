@@ -7,6 +7,10 @@ export const About = () => {
       <div className='container'>
         <p>Limitless Nuggets is your online nugget store.</p>
         <p>Only the best for my boys.</p>
+        <br />
+        <p>Complaints?</p>
+        <p>Email:</p>
+        <p>Phone:</p>
       </div>
     </div>
   );

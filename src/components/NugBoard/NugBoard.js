@@ -38,11 +38,11 @@ export const NugBoard = () => {
             <div className='nugget-image'>
               <img src={nugget.imgSrc} alt={nugget.name} />
             </div>
-            <p>{nugget.strain} </p>
+            <p className='nugget-name'>{nugget.strain} </p>
             <form onSubmit={(e) => handleAddToCart(e, nugget)}>
               <select name='sizeSelection'>
                 <option value={0}>1/16: ${nugget.prices.sixteenth}</option>
-                <option value={1}>1/8: ${nugget.prices.eigth}</option>
+                <option value={1}>1/8: ${nugget.prices.eighth}</option>
                 <option value={2}>1/4: ${nugget.prices.quarter}</option>
                 <option value={3}>1/2: ${nugget.prices.half}</option>
                 <option value={4}>Full: ${nugget.prices.full}</option>
