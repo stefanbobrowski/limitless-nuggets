@@ -5,14 +5,15 @@ import { Footer } from './components/Footer/Footer';
 import './App.scss';
 
 function App() {
-	return (
-		<div className='app'>
-			<Header />
-			<Cart />
-			<Outlet />
-			<Footer />
-		</div>
-	);
+  return (
+    <div className='app'>
+      <h2>ct-dispensary coming soon</h2>
+      {/* <Header />
+      <Cart />
+      <Outlet />
+      <Footer /> */}
+    </div>
+  );
 }
 
 export default App;
