@@ -1,51 +1,57 @@
 .cart {
-    margin: 2rem;
-    padding: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 2rem;
+  padding: 2rem;
+  border: 2px solid #222;
+  color: #000;
+  background-color: #fff;
+
+  .close-cart-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+
+  .nugget-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nugget {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid gray;
+
+    .nugget-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 50px;
+      height: 50px;
+      margin-right: 1rem;
+      background-color: black;
+    }
+  }
+
+  .remove-button {
+    margin: auto auto auto 2rem;
+    width: 40px;
+    height: 40px;
+    color: rgb(202, 19, 19);
     border: 2px solid #222;
-    background-color: #fff;
 
-    .nugget-container {
-        display: flex;
-        flex-direction: column;
+    &:hover {
+      background-color: #e39c9c;
     }
+  }
 
-    .nugget {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        padding: 0.5rem 0;
-        border-bottom: 1px solid gray;
-
-        .nugget-image {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            max-width: 50px;
-            height: 50px;
-            margin-right: 1rem;
-            background-color: black;
-        }
-    }
-
-    .remove-button {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto 1rem auto auto;
-        width: 40px;
-        height: 40px;
-        color: rgb(202, 19, 19);
-        border: 2px solid #222;
-
-        &:hover {
-            background-color: #e39c9c;
-        }
-    }
-
-    .subtotal {
-        font-size: 2rem;
-        margin-top: 2rem;
-    }
+  .subtotal {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
 }

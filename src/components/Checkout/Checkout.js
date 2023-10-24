@@ -1,6 +1,5 @@
 import { useState, useContext } from 'react';
 import { Context } from '../../store';
-import './Checkout.scss';
 
 export const Checkout = () => {
   const [state, dispatch] = useContext(Context);
@@ -39,8 +38,7 @@ export const Checkout = () => {
     <div className='checkout'>
       {orderSubmitted ? (
         <div>
-          <h2>YOU'RE ALL SET!!!!!</h2>
-          <p>Thank you for your order!</p>
+          <h2>Thank you for your order {customerName}!</h2>
           <hr />
           <p>{customerName}</p>
           <p>{customerPhone}</p>
@@ -55,6 +53,7 @@ export const Checkout = () => {
             ))}
           <hr />
           <p className='price-red'>${tempCart.price}</p>
+          <p>We'll call you when it&apos;s ready!</p>
 
           <button onClick={handleGoBack}>Go Back Home</button>
         </div>

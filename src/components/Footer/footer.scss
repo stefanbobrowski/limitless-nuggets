@@ -1,6 +1,23 @@
 .app-footer {
-  padding: 1rem;
+  padding: 2.5rem;
   text-align: center;
   font-size: 1.2rem;
-  background-color: #222;
+  background-color: darken(#31b664, 30%) ;
+
+  p {
+    margin: 0;
+  }
+
+  .footer-mid {
+    display: flex;
+    justify-content: space-between;
+
+    .footer-mid-left {
+      > div {
+        margin: 1rem;
+      }
+    }
+
+
+  }
 }

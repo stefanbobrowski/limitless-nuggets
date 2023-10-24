@@ -1,0 +1,23 @@
+.home-page {
+
+
+  .categories {
+    // display: flex;
+    // flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1rem;
+    margin: 2rem;
+
+    .category {
+
+      .category-name {
+
+      }
+
+      .category-image {
+        width: 100px;
+      }
+    }
+  }
+}

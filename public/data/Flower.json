@@ -1,0 +1,84 @@
+{
+    "Flower": [
+        {
+            "strain": "Black Orchid",
+            "prices": {
+                "1/8oz": 60,
+                "1/4oz": 90,
+                "1/2oz": 180,
+                "oz": 300
+            },
+            "imgSrc": "/Flower/BlackOrchid-1.jpg"
+        },
+        {
+            "strain": "Dankaroos",
+            "prices": {
+                "1/8oz": 60,
+                "1/4oz": 90,
+                "1/2oz": 180,
+                "oz": 300
+            },
+            "imgSrc": "/Flower/Dankaroos-1.jpg"
+        },
+        {
+            "strain": "Gelatti",
+            "prices": {
+                "1/8oz": 60,
+                "1/4oz": 90,
+                "1/2oz": 180,
+                "oz": 300
+            },
+            "imgSrc": "/Flower/Gelatti-1.jpg"
+        },
+        {
+            "strain": "Georgia",
+            "prices": {
+                "1/8oz": 60,
+                "1/4oz": 90,
+                "1/2oz": 180,
+                "oz": 300
+            },
+            "imgSrc": "/Flower/Georgia-1.jpg"
+        },
+        {
+            "strain": "Grapes",
+            "prices": {
+                "1/8oz": 60,
+                "1/4oz": 90,
+                "1/2oz": 180,
+                "oz": 300
+            },
+            "imgSrc": "/Flower/Grapes-1.jpg"
+        },
+        {
+            "strain": "Jamaican",
+            "prices": {
+                "1/8oz": 60,
+                "1/4oz": 90,
+                "1/2oz": 180,
+                "oz": 300
+            },
+            "imgSrc": "/Flower/Jamaican-1.jpg"
+        },
+        {
+            "strain": "Jefe",
+            "prices": {
+                "1/8oz": 60,
+                "1/4oz": 90,
+                "1/2oz": 180,
+                "oz": 300
+            },
+            "imgSrc": "/Flower/Jefe-1.jpg"
+        },
+        {
+            "strain": "Lemon",
+            "prices": {
+                "1/8oz": 60,
+                "1/4oz": 90,
+                "1/2oz": 180,
+                "oz": 300
+            },
+            "imgSrc": "/Flower/Lemon-1.jpg"
+        }
+    ]
+}

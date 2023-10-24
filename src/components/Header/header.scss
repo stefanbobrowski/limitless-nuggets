@@ -1,10 +1,13 @@
+@import '../../App.scss';
+
 .app-header {
-  background-color: #222;
+  background-color: #000;
 
   .header-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: $serif-font;
 
     .header-logo {
       display: flex;

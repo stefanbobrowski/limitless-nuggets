@@ -1,13 +1,19 @@
 import { useState, useEffect, useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Context } from '../../store';
 import './Cart.scss';
 
 export const Cart = () => {
   const [state, dispatch] = useContext(Context);
 
-  const { cart, subtotal } = state;
+  const { showCart, cart, subtotal } = state;
 
   // const [subtotal, setSubtotal] = useState(0);
+  const navigate = useNavigate();
+
+  const handleCloseCart = () => {
+    dispatch({ type: 'TOGGLE_SHOW_CART' });
+  };
 
   const handleRemoveFromCart = (index) => {
     // const newCart = [...cart];
@@ -16,7 +22,8 @@ export const Cart = () => {
   };
 
   const handleOpenCheckout = () => {
-    dispatch({ type: 'OPEN_CHECKOUT' });
+    // dispatch({ type: 'OPEN_CHECKOUT' });
+    navigate('/checkout');
   };
 
   // useEffect(() => {
@@ -33,38 +40,47 @@ export const Cart = () => {
   //   }
   // }, [cart]);
 
-  return (
-    <div className='cart'>
-      <h1>Cart</h1>
+  if (showCart) {
+    return (
+      <div className='cart'>
+        <h1>Cart</h1>
+        <button className='close-cart-button' onClick={handleCloseCart}>
+          close
+        </button>
 
-      <div className='nugget-container'>
-        {cart &&
-          cart.map((item, i) => (
-            <div key={i} className='nugget'>
-              <div className='nugget-image'>
-                <img src={item.image} alt={item.name} />
+        <div className='nugget-container'>
+          {cart &&
+            cart.map((item, i) => (
+              <div key={i} className='nugget'>
+                <div className='nugget-image'>
+                  <img src={item.image} alt={item.name} />
+                </div>
+
+                <span>
+                  {item.strain} ({item.amount}) -{' '}
+                  <span className='price-red'>${item.price}</span>
+                </span>
+                <button
+                  className='remove-button'
+                  onClick={() => handleRemoveFromCart(i)}
+                >
+                  ❌
+                </button>
               </div>
-              <button
-                className='remove-button'
-                onClick={() => handleRemoveFromCart(i)}
-              >
-                ❌
-              </button>
-              <span>
-                {item.strain} ({item.amount}) -{' '}
-                <span className='price-red'>${item.price}</span>
-              </span>
-            </div>
-          ))}
+            ))}
+        </div>
+
+        <p className='subtotal'>
+          Subtotal ({cart.length} items):{' '}
+          <b className='price-red'>${subtotal}</b>
+        </p>
+
+        <button className='checkout-button' onClick={handleOpenCheckout}>
+          CHECKOUT
+        </button>
       </div>
-
-      <p className='subtotal'>
-        Subtotal ({cart.length} items): <b className='price-red'>${subtotal}</b>
-      </p>
-
-      <button className='checkout-button' onClick={handleOpenCheckout}>
-        CHECKOUT
-      </button>
-    </div>
-  );
+    );
+  } else {
+    return <></>;
+  }
 };
